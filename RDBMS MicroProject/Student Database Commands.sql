@@ -6071,7 +6071,7 @@ SELECT AttendanceID FROM AttendanceServer
 WHERE StudentID = 277;
 
 -- Shows the schedule on Monday for CourseID 3 (Chemical Engineering A BatchYr2023 students)
-SELECT Weekday, TimeOfRecord, SubjectID FROM Schedule
+SELECT DayOfWeek, TimeOfRecord, SubjectID FROM Schedule
 WHERE CourseID = 3;
 
 -- Shows Subject with ID 17 (General Chemistry)
