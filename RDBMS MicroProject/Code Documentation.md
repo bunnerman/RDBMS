@@ -47,19 +47,19 @@ For Attended attribute-
 
 ### ER Diagram
 
-Red = Student
-Green = CourseInfo
-Blue = AttendanceServer
-Orange = Schedule
-Yellow = Subject
-**Purple = Relationship Box**
+- Red = Student
+- Green = CourseInfo
+- Blue = AttendanceServer
+- Orange = Schedule
+- Yellow = Subject
+- **Purple = Relationship Box**
 
-Purple Lines = Entity Relationship Lines
-Other Colored Lines = Foreign Key of table [color] **(but same color = PK of table)**
+- Purple Lines = Entity Relationship Lines
+- Other Colored Lines = Foreign Key of table [color] **(but same color = PK of table)**
 
-**Bold** = Entity (Table)
-*Italic FK* = Foreign Key
-Underlined = Primary Key
+- **Bold** = Entity (Table)
+- *Italic FK* = Foreign Key
+- Underlined = Primary Key
 
 ER diagram was made with help of the Obsidian Notetaking app, specifically with the Canvas feature (with Advanced Canvas plugin).
 
@@ -68,4 +68,5 @@ ER diagram was made with help of the Obsidian Notetaking app, specifically with 
 https://programiz.com/sql/online-compiler *(for compilation of code)*
 Visual Studio Code *(for viewing code and editing this document)*
 ChatGPT ***(STRICTLY ONLY FOR RANDOM RECORD GENERATION AS EXPLAINED ABOVE IN AI USE)***
+
 Obsidian https://obsidian.md *(for ER Diagram)*
