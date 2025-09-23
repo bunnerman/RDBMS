@@ -59,12 +59,12 @@ INSERT INTO Emp
 VALUES
 (1, 'Sita', 'Baner', 1234, 10, 'IT', 1, 'IT Professional', 3500000, '1981-05-01', 'Adam'),
 (2, 'Tom', 'Kothrud', 1235, 20, 'HR', 2, 'HR Manager', 1500000, '1981-12-03', 'Harsh'),
-(3, 'Steven', 'Shivajinagar', 50, 101, 'IT', 3, 'Developer', 3000000, '1981-12-17', 'Adam'),
+(3, 'Steven', 'Shivajinagar', 5130, 10, 'IT', 3, 'Developer', 3000000, '1981-12-17', 'Adam'),
 (4, 'Hank', 'PCMC', 1334, 30, 'Finance', 4, 'Analyst', 1000000, '1980-01-19', 'Harsh'),
-(5, 'Harsh', 'Balewadi', 1245, 10, 'Admin', 5, 'MGR', 1000000, '1982-09-12', 'CEO'),
+(5, 'Harsh', 'Balewadi', 1245, 40, 'Admin', 5, 'MGR', 1000000, '1982-09-12', 'CEO'),
 (6, 'Jack', 'Hinjawadi', 1889, 30, 'Finance', 6, 'Analyst', 2800000, '1972-08-16', 'Adam'),
-(7, 'Adam', 'Vimannagar', 1773, 70, 'Admin', 7, 'MGR', 1200000, '1962-08-12', 'CEO'),
-(8, 'Steve', 'Koregaon Park', 1321, 20, 'IT', 8, 'Developer', 1800000, '1976-02-19', 'Harsh');
+(7, 'Adam', 'Vimannagar', 1773, 40, 'Admin', 7, 'MGR', 1200000, '1962-08-12', 'CEO'),
+(8, 'Steve', 'Koregaon Park', 1321, 10, 'IT', 8, 'Developer', 1800000, '1976-02-19', 'Harsh');
 
 SELECT Dept_name, SUM(Salary) AS Labour_burden_costs FROM Emp
 GROUP BY Dept_name; 
