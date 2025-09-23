@@ -79,7 +79,7 @@ SELECT * FROM Emp
 ORDER BY Salary;
 
 SELECT E_name, Salary, Dept_name FROM Emp
-WHERE Salary > 16000
+WHERE Salary > 1600000 -- Original is 16000, modified to match table
 ORDER BY Dept_name;
 
 ----Assignment 11----
