@@ -66,12 +66,12 @@ ORDER BY Age;
 
 -- 4) Names of Sailors who have reserved at least one boat
 SELECT DISTINCT s_name FROM Reserves
-LEFT JOIN Sailors ON Reserves.s_id = Sailors.s_id;
+INNER JOIN Sailors ON Reserves.s_id = Sailors.s_id;
 
 -- 5) IDs and Names of sailors who reserved 2 different boats on the same day
 SELECT Sailors.s_id, Sailors.s_name, Reserves1.reserve_day, Reserves1.b_id AS Boat1, Reserves2.b_id AS Boat2
 FROM Sailors
-JOIN Reserves AS Reserves1 ON Sailors.s_id = Reserves1.s_id
-JOIN Reserves AS Reserves2 ON Sailors.s_id = Reserves2.s_id
+INNER JOIN Reserves AS Reserves1 ON Sailors.s_id = Reserves1.s_id
+INNER JOIN Reserves AS Reserves2 ON Sailors.s_id = Reserves2.s_id
 AND Reserves1.reserve_day = Reserves2.reserve_day
 AND Reserves1.b_id < Reserves2.b_id;
