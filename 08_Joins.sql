@@ -20,14 +20,14 @@ CREATE TABLE Reserves
     FOREIGN KEY (b_id) REFERENCES Boats(b_id)
 );
 
-INSERT INTO Sailors (s_id, s_name, rating, age) VALUES
+INSERT INTO Sailors VALUES
 (1, 'John', 4, 30),
 (2, 'Arthur', 5, 33),
 (3, 'Jack', 3, 54),
 (4, 'Thomas', 1, 23),
 (5, 'Bob', 2, 57);
 
-INSERT INTO Boats (b_id, b_name, color) VALUES
+INSERT INTO Boats VALUES
 (101, 'Boat One', 'Red'),
 (102, '2nd Boat', 'Blue'),
 (103, 'Third Boat', 'Green'),
