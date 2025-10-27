@@ -3,7 +3,7 @@ Online Programiz SQL Compiler compatible code was used for this project. Hence s
 There are a total of 5 tables in the project.
 
 Student, CourseInfo, AttendanceServer, Schedule and Subject. These come together to form the attendance managing system 
-(although it is a student data DB on it's own once after complex it became).
+(although it is a student data DB on it's own once it became more complex).
 
 ### CourseInfo
 
@@ -70,3 +70,4 @@ Visual Studio Code *(for viewing code and editing this document)*
 ChatGPT ***(STRICTLY ONLY FOR RANDOM RECORD GENERATION AS EXPLAINED ABOVE IN AI USE)***
 
 Obsidian https://obsidian.md *(for ER Diagram)*
+
