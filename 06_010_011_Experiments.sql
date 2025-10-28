@@ -156,19 +156,14 @@ WHERE S_id IN
 )
 ORDER BY Age;
 
-SELECT S_name FROM Sailors
-WHERE S_id IN 
+SELECT DISTINCT S_id
+FROM Reserves
+WHERE B_id IN 
 (
-    SELECT S_id
-    FROM Reserves
-    WHERE B_id IN 
-    (
-        SELECT B_id
-        FROM Boats
-        WHERE Color IN ('Red', 'Green')
-    )
-)
-ORDER BY Age;
+    SELECT B_id
+    FROM Boats
+    WHERE Color IN ('Red', 'Green')
+);
 
 INSERT INTO Sailors VALUES
 (6, 'Mike', 3, 40),
