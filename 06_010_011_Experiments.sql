@@ -106,7 +106,33 @@ CREATE TABLE Reserves
     B_date DATE,
     FOREIGN KEY (S_id) REFERENCES Sailors(S_id),
     FOREIGN KEY (B_id) REFERENCES Boats(B_id)
-)
+);
+
+INSERT INTO Sailors (s_id, s_name, rating, age) VALUES
+(1, 'John', 4, 30),
+(2, 'Arthur', 5, 33),
+(3, 'Jack', 3, 54),
+(4, 'Thomas', 1, 23),
+(5, 'Bob', 2, 57);
+
+INSERT INTO Boats (b_id, b_name, color) VALUES
+(101, 'Boat One', 'Red'),
+(102, '2nd Boat', 'Blue'),
+(103, 'Third Boat', 'Green'),
+(104, 'Boat 4th', 'White'),
+(105, 'The 5th Boat', 'Red');
+
+INSERT INTO Reserves VALUES
+(1, 101, '2025-07-12'),
+(2, 103, '2025-02-05'),
+(3, 102, '2025-02-12'),
+(2, 105, '2025-03-15'),
+(5, 104, '2025-04-01'),
+(1, 102, '2025-04-18'),
+(2, 101, '2025-05-06'),
+(3, 105, '2025-05-21'),
+(3, 103, '2025-06-10'),
+(1, 104, '2025-07-12');
 
 SELECT * FROM Sailors
 WHERE S_id IN 
@@ -144,6 +170,9 @@ WHERE S_id IN
 )
 ORDER BY Age;
 
+INSERT INTO Sailors VALUES
+(6, 'Mike', 3, 40),
+(7, 'Dave', 3, 28);
 SELECT Rating, AVG(Age) AS Avg_Age FROM Sailors
 GROUP BY Rating
 HAVING COUNT(S_id) >= 2;
